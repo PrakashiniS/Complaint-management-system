@@ -1,0 +1,49 @@
+
+.diamond-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 150px;
+  margin-left: 50px;
+}
+
+.diamond {
+  width: 150px;
+  height: 150px;
+  border-radius: 80%;
+  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.diamond > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diamond > div > h5 {
+  margin: 0;
+}
+
+.border-animation {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 193px;
+  height: 193px;
+  border: 4px solid transparent;
+  border-top-color: #ff5733;
+  border-bottom-color: #3357ff;
+  border-radius: 100%;
+  animation: rotateBorder 4s linear infinite;
+}
+
+@keyframes rotateBorder {
+  100% {
+    transform: rotate(360deg);
+  }
+}
